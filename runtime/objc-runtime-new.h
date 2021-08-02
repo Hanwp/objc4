@@ -1247,19 +1247,28 @@ struct swift_class_t : objc_class {
 };
 
 
+/// 分类 Category
 struct category_t {
+    // 类的名字
     const char *name;
+    // 类
     classref_t cls;
+    // 给类添加的实例方法列表
     struct method_list_t *instanceMethods;
+    // 给类添加的类方法列表
     struct method_list_t *classMethods;
+    // 遵守的协议列表
     struct protocol_list_t *protocols;
+    // 给类添加的实例属性列表
     struct property_list_t *instanceProperties;
-
+    
+    /// 获取方法列表
     method_list_t *methodsForMeta(bool isMeta) {
         if (isMeta) return classMethods;
         else return instanceMethods;
     }
-
+    
+    /// 获取属性列表（目前只有实例属性列表）
     property_list_t *propertiesForMeta(bool isMeta) {
         if (isMeta) return nil; // classProperties;
         else return instanceProperties;

@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		35522DE226B83263007AC1BB /* MyCatDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 35522DE026B83263007AC1BB /* MyCatDemo.h */; };
+		35522DE326B83263007AC1BB /* MyCatDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 35522DE126B83263007AC1BB /* MyCatDemo.m */; };
+		35522DE526B83376007AC1BB /* MyCatDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35522DE426B83375007AC1BB /* MyCatDemo.cpp */; };
 		393CEAC00DC69E3E000B69DE /* objc-references.mm in Sources */ = {isa = PBXBuildFile; fileRef = 393CEABF0DC69E3E000B69DE /* objc-references.mm */; };
 		393CEAC60DC69E67000B69DE /* objc-references.h in Headers */ = {isa = PBXBuildFile; fileRef = 393CEAC50DC69E67000B69DE /* objc-references.h */; };
 		399BC72E1224831B007FBDF0 /* objc-externalref.mm in Sources */ = {isa = PBXBuildFile; fileRef = 399BC72D1224831B007FBDF0 /* objc-externalref.mm */; };
@@ -120,6 +123,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35522DE026B83263007AC1BB /* MyCatDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCatDemo.h; sourceTree = "<group>"; };
+		35522DE126B83263007AC1BB /* MyCatDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCatDemo.m; sourceTree = "<group>"; };
+		35522DE426B83375007AC1BB /* MyCatDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyCatDemo.cpp; sourceTree = "<group>"; };
 		393CEABF0DC69E3E000B69DE /* objc-references.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-references.mm"; path = "runtime/objc-references.mm"; sourceTree = "<group>"; };
 		393CEAC50DC69E67000B69DE /* objc-references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-references.h"; path = "runtime/objc-references.h"; sourceTree = "<group>"; };
 		399BC72D1224831B007FBDF0 /* objc-externalref.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "objc-externalref.mm"; path = "runtime/objc-externalref.mm"; sourceTree = "<group>"; };
@@ -228,6 +234,7 @@
 		08FB7794FE84155DC02AAC07 /* objc */ = {
 			isa = PBXGroup;
 			children = (
+				35522DDF26B8323D007AC1BB /* CategoryDemo */,
 				BC8B5D1212D3D48100C78A5B /* libauto.dylib */,
 				838485C60D6D687700CEA253 /* Public Headers */,
 				838485C70D6D688200CEA253 /* Private Headers */,
@@ -303,6 +310,16 @@
 				D2AAC0630554660B00DB518D /* libobjc.A.dylib */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		35522DDF26B8323D007AC1BB /* CategoryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				35522DE026B83263007AC1BB /* MyCatDemo.h */,
+				35522DE126B83263007AC1BB /* MyCatDemo.m */,
+				35522DE426B83375007AC1BB /* MyCatDemo.cpp */,
+			);
+			path = CategoryDemo;
 			sourceTree = "<group>";
 		};
 		838485B20D6D67F900CEA253 /* Other */ = {
@@ -415,6 +432,7 @@
 				83112ED40F00599600A5FBAF /* objc-internal.h in Headers */,
 				838485FE0D6D68A200CEA253 /* objc-load.h in Headers */,
 				838486000D6D68A200CEA253 /* objc-loadmethod.h in Headers */,
+				35522DE226B83263007AC1BB /* MyCatDemo.h in Headers */,
 				831C85D50E10CF850066E64C /* objc-os.h in Headers */,
 				838486030D6D68A200CEA253 /* objc-private.h in Headers */,
 				393CEAC60DC69E67000B69DE /* objc-references.h in Headers */,
@@ -461,7 +479,6 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = NO;
 				LastUpgradeCheck = 0440;
 				TargetAttributes = {
 					837F67A81A771F63004D34FA = {
@@ -527,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838485C00D6D687300CEA253 /* hashtable2.mm in Sources */,
+				35522DE326B83263007AC1BB /* MyCatDemo.m in Sources */,
 				838485C40D6D687300CEA253 /* maptable.mm in Sources */,
 				838485F10D6D68A200CEA253 /* objc-auto.mm in Sources */,
 				838485F20D6D68A200CEA253 /* objc-cache.mm in Sources */,
@@ -569,6 +587,7 @@
 				8383A3A3122600E9009290B8 /* a1a2-blocktramps-arm.s in Sources */,
 				8383A3A4122600E9009290B8 /* a2a3-blocktramps-arm.s in Sources */,
 				399BC72E1224831B007FBDF0 /* objc-externalref.mm in Sources */,
+				35522DE526B83376007AC1BB /* MyCatDemo.cpp in Sources */,
 				39ABD72412F0B61800D1054C /* objc-weak.mm in Sources */,
 				83D49E4F13C7C84F0057F1DD /* objc-msg-arm64.s in Sources */,
 				8379996E13CBAF6F007C2B5F /* a1a2-blocktramps-arm64.s in Sources */,
